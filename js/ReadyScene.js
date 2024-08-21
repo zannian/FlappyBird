@@ -21,6 +21,7 @@
             });
 
             //确定getready和tap的位置
+            // >> 移位1 相当于 parseInt(x/2)
             tap.x = this.width - tap.width >> 1;
             tap.y = this.height - tap.height + 40 >> 1;
             getready.x = this.width - getready.width >> 1;
