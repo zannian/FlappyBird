@@ -17,6 +17,7 @@
             }.bind(this));
 
             this.asset.load();
+            this.initBgm()
         },
 
         // 定义初始化舞台方法
@@ -134,6 +135,16 @@
             // this.bird.getReady()
         },
 
+        initBgm: function () {
+            this.bgm = game.Audio
+            this.bgm.load()
+            this.flySounds = game.Click
+            this.flySounds.load()
+            console.log('====================================');
+            console.log(this.bgm);
+            console.log('====================================');
+        },
+
         initCurrentScore: function () {
             //当前分数
             this.currentScore = new Hilo.BitmapText({
@@ -162,6 +173,7 @@
                 //启动游戏场景
                 if (this.state !== 'playing') this.gameStart();
                 //控制小鸟往上飞
+                this.flySounds.play()
                 this.bird.startFly();
             }
         },

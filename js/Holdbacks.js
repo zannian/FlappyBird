@@ -9,7 +9,7 @@
             //管子之间的水平间隔
             this.hoseSpacingX = 300;
             //管子上下两部分之间的垂直间隔，即小鸟要穿越的空间大小
-            this.hoseSpacingY = 240;
+            this.hoseSpacingY = 340;
             //管子的总数（一根管子分上下两部分）
             this.numHoses = 4;
             //预设移出屏幕左侧的管子数量，一般设置为管子总数的一半
