@@ -195,6 +195,7 @@
 
         gameStart: function () {
             this.state = 'playing';
+            this.bgm.play()
             //隐藏准备场景
             this.readyScene.visible = false;
             //开始从右至左移动障碍

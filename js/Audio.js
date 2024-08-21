@@ -1,7 +1,7 @@
 (function (g) {
     g.Audio =new Hilo.HTMLAudio({
         src: 'audio/dancing-under-the-stars-background-music-for-video-hip-hop-version-225245.mp3',
-        autoPlay:true,
+        autoPlay:false,
         loop:true,
         volume:0.3
     })
